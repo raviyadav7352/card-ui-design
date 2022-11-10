@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+.page10 {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.card-Body {
+    height: 32rem;
+    width: 22rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 22px rgb(119 136 153 / 30%);
+    position: relative;
+
+}
+
+
+.imagebox {
+    height: 34%;
+    width: 100%;
+}
+
+.imagebox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subscription {
+    padding: 12px 0;
+    display: flex;
+    background: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.subscription img {
+    height: 40px;
+    width: 40px;
+}
+
+.annual {
+    font-size: 14px;
+
+}
+
+.annual p:nth-child(1) {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    margin: 0;
+}
+
+.annual p:nth-child(2) {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+.linkmusic {
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.linkmusic:hover {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.linkmusic:active {
+    color: hsl(223, 47%, 23%)
+}
+
+.contentBody {
+    background: white;
+    height: 66%;
+    text-align: center;
+    padding: 0% 10% 0;
+}
+
+.contentBody h2 {
+    margin: 0;
+    padding-top: 20px;
+}
+
+.contentBody>p {
+    color: hsl(224, 23%, 55%);
+    margin: 15px auto;
+    line-height: 20px;
+}
+
+.btn1 {
+    border: 0;
+    border-radius: 10px;
+    background: hsl(245, 75%, 52%);
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 13px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0 4px 10px hsl(252deg 76% 53% / 45%);
+}
+
+
+.btn1:hover {
+    background-color: rgb(106, 45, 163);
+}
+
+.btn1:active {
+    background-color: rgb(21, 150, 105);
+}
+
+.btnLink {
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: hsl(224, 23%, 55%);
+}
+
+.btnLink:hover {
+    font-weight: 600;
+    color: hsl(223, 47%, 23%);
+    font-size: 14.3px;
+}
+
+.btnLink:active {
+    color: #9d7070;
+}
+
+@media (min-width:100px) and (max-width:576px) {
+
+    .page10 {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+
+    .contentBody {
+        padding: 0 7%;
+    }
+
+    .card-Body {
+        height: 84%;
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    .btn1 {
+        margin: 24px 0;
+    }
+
+    .subscription {
+        margin-bottom: unset;
+    }
+}
